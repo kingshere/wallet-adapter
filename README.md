@@ -19,6 +19,10 @@ A modern React application that demonstrates integration with the Solana blockch
 - Solana Wallet Adapter
 - Noble Curves (for cryptographic operations)
 
+## Screenshot
+
+![Solana Airdrop Application](./src/assets/Screenshot%202025-03-28%20014049.png)
+
 ## Getting Started
 
 ### Prerequisites
@@ -41,7 +45,6 @@ npm install
 # or
 yarn
 ```
-
 3. Start the development server:
 ```bash
 npm run dev
