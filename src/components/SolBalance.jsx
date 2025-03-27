@@ -19,8 +19,22 @@ function SolBalance() {
   }, [wallet.publicKey, connection]);
 
   return (
-    <div>
-      <p>Sol Balance: {solValue} SOL</p>
+    <div className="balance-container" style={{
+      margin: "20px 0",
+      padding: "15px",
+      backgroundColor: "#2d3748",
+      borderRadius: "8px",
+      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+      textAlign: "center"
+    }}>
+      <p style={{
+        fontSize: "18px",
+        fontWeight: "bold",
+        color: "#90cdf4",
+        margin: "0"
+      }}>
+        Sol Balance: <span style={{ color: "#68d391" }}>{solValue} SOL</span>
+      </p>
     </div>
   );
 }
