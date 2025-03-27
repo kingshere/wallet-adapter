@@ -72,7 +72,7 @@ const App = () => {
 
           <div className="min-h-screen flex items-center justify-center bg-zinc-900 text-zinc-200 font-poppins" 
                style={{ 
-                 padding: "120px 20px 40px",
+                 padding: "120px 250px 40px",
                  display: "flex",
                  flexDirection: "column",
                  justifyContent: "center",
