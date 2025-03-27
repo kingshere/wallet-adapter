@@ -20,20 +20,23 @@ function SolBalance() {
 
   return (
     <div className="balance-container" style={{
-      margin: "20px 0",
-      padding: "15px",
+      margin: "30px auto",
+      padding: "25px",
       backgroundColor: "#2d3748",
-      borderRadius: "8px",
-      boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
-      textAlign: "center"
+      borderRadius: "12px",
+      boxShadow: "0 6px 12px rgba(0, 0, 0, 0.15)",
+      textAlign: "center",
+      maxWidth: "90%",
+      width: "450px"
     }}>
       <p style={{
-        fontSize: "18px",
+        fontSize: "22px",
         fontWeight: "bold",
         color: "#90cdf4",
-        margin: "0"
+        margin: "10px 0",
+        letterSpacing: "0.5px"
       }}>
-        Sol Balance: <span style={{ color: "#68d391" }}>{solValue} SOL</span>
+        Sol Balance: <span style={{ color: "#68d391", marginLeft: "8px" }}>{solValue} SOL</span>
       </p>
     </div>
   );
