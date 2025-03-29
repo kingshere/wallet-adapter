@@ -126,16 +126,18 @@ const App = () => {
                 marginBottom: "50px", 
                 width: "100%",
                 backgroundColor: "#2d3748",
-                padding: "25px",
-                borderRadius: "12px",
-                boxShadow: "0 6px 12px rgba(0, 0, 0, 0.15)"
+                padding: "30px",
+                borderRadius: "16px",
+                boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
+                border: "1px solid #4a5568"
               }}>
                 <h2 style={{
-                  fontSize: "22px",
+                  fontSize: "24px",
                   fontWeight: "bold",
                   color: "#90cdf4",
-                  marginBottom: "20px",
-                  textAlign: "center"
+                  marginBottom: "25px",
+                  textAlign: "center",
+                  letterSpacing: "0.5px"
                 }}>
                   Send SOL
                 </h2>
@@ -147,16 +149,18 @@ const App = () => {
                 marginBottom: "50px", 
                 width: "100%",
                 backgroundColor: "#2d3748",
-                padding: "25px",
-                borderRadius: "12px",
-                boxShadow: "0 6px 12px rgba(0, 0, 0, 0.15)"
+                padding: "30px",
+                borderRadius: "16px",
+                boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
+                border: "1px solid #4a5568"
               }}>
                 <h2 style={{
-                  fontSize: "22px",
+                  fontSize: "24px",
                   fontWeight: "bold",
                   color: "#90cdf4",
-                  marginBottom: "20px",
-                  textAlign: "center"
+                  marginBottom: "25px",
+                  textAlign: "center",
+                  letterSpacing: "0.5px"
                 }}>
                   Sign Message
                 </h2>
