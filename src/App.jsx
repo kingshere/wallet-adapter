@@ -108,9 +108,10 @@ const App = () => {
             <div style={{
               display: "grid",
               gridTemplateColumns: "repeat(2, 1fr)",
-              gap: "40px",
+              gap: "120px",  // Increased from 40px to 60px
               maxWidth: "1400px",
-              margin: "0 auto"
+              margin: "0 auto",
+              padding: "50px 50px"  // Added horizontal padding
             }}>
               {/* Airdrop Component */}
               <div style={{ 
