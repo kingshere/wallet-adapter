@@ -1,7 +1,7 @@
 
 # Solana Wallet Adapter
 
-A modern React application that demonstrates integration with the Solana blockchain using the Solana Wallet Adapter. This project provides a simple interface for connecting to Solana wallets, viewing balances, requesting airdrops, sending SOL, and signing messages.
+A modern React application that demonstrates integration with the Solana blockchain using the Solana Wallet Adapter. This project provides a comprehensive interface for connecting to Solana wallets, viewing balances, requesting airdrops, sending SOL, and signing messages.
 
 ## Features
 
@@ -10,6 +10,7 @@ A modern React application that demonstrates integration with the Solana blockch
 - **Airdrop Functionality**: Request SOL airdrops on devnet for testing
 - **Token Transfer**: Send SOL to other wallet addresses
 - **Message Signing**: Sign messages using your Solana wallet
+- **Responsive Design**: Clean, modern UI that works on various screen sizes
 
 ## Technologies Used
 
@@ -18,6 +19,7 @@ A modern React application that demonstrates integration with the Solana blockch
 - Solana Web3.js
 - Solana Wallet Adapter
 - Noble Curves (for cryptographic operations)
+- BS58 (for encoding/decoding)
 
 ## Screenshot
 
@@ -42,14 +44,11 @@ cd wallet-adapter
 2. Install dependencies:
 ```bash
 npm install
-# or
-yarn
 ```
+
 3. Start the development server:
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 4. Open your browser and navigate to `http://localhost:5173`
@@ -64,58 +63,32 @@ yarn dev
 
 ### Checking Balance
 
-Once connected, your SOL balance will automatically display on the screen.
+Once connected, your SOL balance will automatically display in the SOL Balance card.
 
 ### Requesting an Airdrop
 
-1. Enter the amount of SOL you want to request
+1. Enter the amount of SOL you want to request in the Request Airdrop card
 2. Click "Request Airdrop"
 3. Wait for the transaction to complete
 
 ### Sending SOL
 
-1. Enter the recipient's public key
+1. Enter the recipient's public key in the Send SOL card
 2. Enter the amount of SOL to send
-3. Click "Send Tokens"
+3. Click "Send SOL"
 4. Approve the transaction in your wallet
 
 ### Signing Messages
 
-1. Enter a message in the input field
+1. Enter a message in the input field in the Sign Message card
 2. Click "Sign Message"
 3. Approve the signing request in your wallet
+4. View the generated signature
 
-## Building for Production
 
-To build the application for production:
 
-```bash
-npm run build
-# or
-yarn build
-```
 
-The built files will be in the `dist` directory.
 
-## Development
 
-### Available Scripts
 
-- `npm run dev` - Start the development server
-- `npm run build` - Build for production
-- `npm run lint` - Run ESLint
-- `npm run preview` - Preview the production build locally
 
-## License
-
-[MIT](LICENSE)
-
-## Acknowledgements
-
-- [Solana](https://solana.com/)
-- [Solana Wallet Adapter](https://github.com/solana-labs/wallet-adapter)
-- [Vite](https://vitejs.dev/)
-- [React](https://reactjs.org/)
-```
-
-This README provides a comprehensive overview of your project, including its features, technologies used, setup instructions, usage guidelines, and development information. Feel free to customize it further to better match your project's specific details or requirements.
