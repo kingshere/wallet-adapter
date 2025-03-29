@@ -56,16 +56,20 @@ function SignMessage() {
       padding: "10px",
       margin: "0 auto",
       maxWidth: "500px",
-      width: "100%" 
+      width: "100%",
+      alignItems: "center"  // Add this to center the children horizontally
     }}>
-      <div style={{ position: "relative" }}>
+      <div style={{ 
+        position: "relative",
+        width: "100%"  // Ensure the container takes full width
+      }}>
         <textarea
           placeholder="Enter message to sign"
           value={message}
           style={{ 
             fontSize: "16px", 
             letterSpacing: "0.5px",
-            padding: "16px 20px",
+            padding: "30px 5px",
             borderRadius: "12px",
             backgroundColor: "#1f2937",
             color: "#f3f4f6",
