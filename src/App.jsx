@@ -16,6 +16,9 @@ import { clusterApiUrl } from "@solana/web3.js";
 import "@solana/wallet-adapter-react-ui/styles.css";
 import Airdrop from "./components/Airdrop";
 import SolBalance from "./components/SolBalance";
+// Import the new components
+import SendingSol from "./components/SendingSol";
+import SignMessage from "./components/SignMessage";
 
 const App = () => {
   const network = WalletAdapterNetwork.Devnet;
@@ -116,6 +119,48 @@ const App = () => {
               
               <div style={{ marginBottom: "50px" }}>
                 <Airdrop />
+              </div>
+              
+              {/* Add SendingSol component with styling */}
+              <div style={{ 
+                marginBottom: "50px", 
+                width: "100%",
+                backgroundColor: "#2d3748",
+                padding: "25px",
+                borderRadius: "12px",
+                boxShadow: "0 6px 12px rgba(0, 0, 0, 0.15)"
+              }}>
+                <h2 style={{
+                  fontSize: "22px",
+                  fontWeight: "bold",
+                  color: "#90cdf4",
+                  marginBottom: "20px",
+                  textAlign: "center"
+                }}>
+                  Send SOL
+                </h2>
+                <SendingSol />
+              </div>
+              
+              {/* Add SignMessage component with styling */}
+              <div style={{ 
+                marginBottom: "50px", 
+                width: "100%",
+                backgroundColor: "#2d3748",
+                padding: "25px",
+                borderRadius: "12px",
+                boxShadow: "0 6px 12px rgba(0, 0, 0, 0.15)"
+              }}>
+                <h2 style={{
+                  fontSize: "22px",
+                  fontWeight: "bold",
+                  color: "#90cdf4",
+                  marginBottom: "20px",
+                  textAlign: "center"
+                }}>
+                  Sign Message
+                </h2>
+                <SignMessage />
               </div>
               
               <SolBalance />
