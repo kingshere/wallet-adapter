@@ -21,7 +21,7 @@ A modern React application that demonstrates integration with the Solana blockch
 
 ## Screenshot
 
-![Solana Airdrop Application](./src/assets/Screenshot%202025-03-28%20014049.png)
+![Solana Airdrop Application](./src/assets/screencapture-localhost-5173-2025-03-30-02_09_24.png)
 
 ## Getting Started
 
