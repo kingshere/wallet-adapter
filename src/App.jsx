@@ -73,63 +73,79 @@ const App = () => {
             </h1>
           </div>
 
-          <div className="min-h-screen flex items-center justify-center bg-zinc-900 text-zinc-200 font-poppins" 
+          <div className="min-h-screen bg-zinc-900 text-zinc-200 font-poppins" 
                style={{ 
-                 padding: "120px 250px 40px",
-                 display: "flex",
-                 flexDirection: "column",
-                 justifyContent: "center",
-                 alignItems: "center",
+                 padding: "120px 40px 40px",
                  width: "100%"
                }}>
-            <div className="bg-zinc-800 p-12 rounded-lg shadow-lg w-full max-w-2xl" 
-                 style={{ 
-                   boxShadow: "0 10px 25px rgba(0, 0, 0, 0.2)",
-                   margin: "0 auto",
-                   maxWidth: "800px",
-                   display: "flex",
-                   flexDirection: "column",
-                   alignItems: "center"  // Center all children horizontally
-                 }}>
+            
+            {/* Wallet connection buttons at the top */}
+            <div style={{ 
+              display: "flex", 
+              justifyContent: "center", 
+              gap: "30px",
+              margin: "0 auto 50px",
+              maxWidth: "500px"
+            }}>
+              <WalletMultiButton style={{
+                fontSize: "18px",
+                padding: "12px 24px",
+                borderRadius: "8px",
+                backgroundColor: "#6366f1",
+                transition: "all 0.3s ease"
+              }} />
               
-              {/* Enlarged wallet buttons with more space */}
+              <WalletDisconnectButton style={{
+                fontSize: "18px",
+                padding: "12px 24px",
+                borderRadius: "8px",
+                backgroundColor: "#6366f1",
+                transition: "all 0.3s ease"
+              }} />
+            </div>
+            
+            {/* Grid layout for the four main components */}
+            <div style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(2, 1fr)",
+              gap: "40px",
+              maxWidth: "1400px",
+              margin: "0 auto"
+            }}>
+              {/* Airdrop Component */}
               <div style={{ 
-                display: "flex", 
-                justifyContent: "center", 
-                gap: "30px",
-                margin: "30px 0 50px",
-                width: "100%" // Ensure full width of parent
-              }}>
-                <WalletMultiButton style={{
-                  fontSize: "18px",
-                  padding: "12px 24px",
-                  borderRadius: "8px",
-                  backgroundColor: "#6366f1",
-                  transition: "all 0.3s ease"
-                }} />
-                
-                <WalletDisconnectButton style={{
-                  fontSize: "18px",
-                  padding: "12px 24px",
-                  borderRadius: "8px",
-                  backgroundColor: "#6366f1",
-                  transition: "all 0.3s ease"
-                }} />
-              </div>
-              
-              <div style={{ marginBottom: "50px" }}>
-                <Airdrop />
-              </div>
-              
-              {/* Add SendingSol component with styling */}
-              <div style={{ 
-                marginBottom: "50px", 
-                width: "100%",
                 backgroundColor: "#2d3748",
                 padding: "30px",
                 borderRadius: "16px",
                 boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
-                border: "1px solid #4a5568"
+                border: "1px solid #4a5568",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column"
+              }}>
+                <h2 style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  color: "#90cdf4",
+                  marginBottom: "25px",
+                  textAlign: "center",
+                  letterSpacing: "0.5px"
+                }}>
+                  Request Airdrop
+                </h2>
+                <Airdrop />
+              </div>
+              
+              {/* Send SOL Component */}
+              <div style={{ 
+                backgroundColor: "#2d3748",
+                padding: "30px",
+                borderRadius: "16px",
+                boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
+                border: "1px solid #4a5568",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column"
               }}>
                 <h2 style={{
                   fontSize: "24px",
@@ -144,15 +160,16 @@ const App = () => {
                 <SendingSol />
               </div>
               
-              {/* Add SignMessage component with styling */}
+              {/* Sign Message Component */}
               <div style={{ 
-                marginBottom: "50px", 
-                width: "100%",
                 backgroundColor: "#2d3748",
                 padding: "30px",
                 borderRadius: "16px",
                 boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
-                border: "1px solid #4a5568"
+                border: "1px solid #4a5568",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column"
               }}>
                 <h2 style={{
                   fontSize: "24px",
@@ -167,7 +184,30 @@ const App = () => {
                 <SignMessage />
               </div>
               
-              <SolBalance />
+              {/* SOL Balance Component */}
+              <div style={{ 
+                backgroundColor: "#2d3748",
+                padding: "30px",
+                borderRadius: "16px",
+                boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
+                border: "1px solid #4a5568",
+                height: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center"
+              }}>
+                <h2 style={{
+                  fontSize: "24px",
+                  fontWeight: "bold",
+                  color: "#90cdf4",
+                  marginBottom: "25px",
+                  textAlign: "center",
+                  letterSpacing: "0.5px"
+                }}>
+                  SOL Balance
+                </h2>
+                <SolBalance />
+              </div>
             </div>
           </div>
         </WalletModalProvider>
