@@ -77,7 +77,7 @@ function SendingSol() {
           style={{ 
             fontSize: "16px", 
             letterSpacing: "0.5px",
-            padding: "16px 20px",
+            padding: "20px 3px",
             borderRadius: "12px",
             backgroundColor: "#1f2937",
             color: "#f3f4f6",
@@ -109,7 +109,7 @@ function SendingSol() {
           style={{ 
             fontSize: "16px", 
             letterSpacing: "0.5px",
-            padding: "16px 20px",
+            padding: "20px 3px",
             borderRadius: "12px",
             backgroundColor: "#1f2937",
             color: "#f3f4f6",
